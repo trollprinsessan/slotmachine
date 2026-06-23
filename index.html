@@ -1,204 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Norrsken Media — Winning Isn't Always Shiny and Loud</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Winning Words</title>
 <style>
-  @font-face {
-    font-family: 'TimesEighteen';
-    src: local('TimesEighteenW01-Roman'), local('Times New Roman');
-    font-weight: 400;
-  }
-  @font-face {
-    font-family: 'TimesEighteenBold';
-    src: local('TimesEighteenW04-Bold'), local('Times New Roman Bold');
-    font-weight: 700;
-  }
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html {
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    scroll-behavior: smooth;
-  }
-
-  body {
-    background: #fff;
-    color: #000;
-    overflow-x: hidden;
-    width: 1440px;
-    margin: 0 auto;
-  }
-
-  /* ======================== HERO SECTION ======================== */
-  .hero {
-    position: relative;
-    width: 1440px;
-    height: 100vh;
-    overflow: hidden;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 160px 20px 0;
-  }
-
-  .hero-bg-image {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 2;
-    pointer-events: none;
-  }
-
-  .hero-headline {
-    position: relative;
-    z-index: 1;
-    width: 848px;
-    font-family: Arial, sans-serif;
-    font-size: 100px;
-    font-weight: 400;
-    line-height: 100px;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    text-align: center;
-    color: #000;
-  }
-
-  .hero-subtitle {
-    position: relative;
-    z-index: 1;
-    width: 430px;
-    max-width: 100%;
-    font-family: 'TimesEighteen', 'Times New Roman', serif;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: center;
-    text-transform: none;
-    color: #000;
-    margin-top: 160px;
-  }
-
-  .hero-byline {
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    color: #000;
-  }
-
-  .byline-mobile { display: none; }
-  .byline-desktop { display: inline; }
-
-  /* ======================== ARTICLE SECTION ======================== */
-  .article {
-    position: relative;
-    width: 1440px;
-    background: #fff;
-  }
-
-  /* Meta sidebar - absolutely positioned on desktop */
-  .meta-sidebar {
-    position: absolute;
-    left: 40px;
-    top: 52px;
-  }
-
-  .meta-row-top {
-    display: block;
-  }
-
-  .meta-published {}
-
-  .meta-label {
-    font-family: 'Inter', sans-serif;
-    font-size: 8px;
-    font-weight: 400;
-    line-height: 8px;
-    text-transform: uppercase;
-    color: #000;
-  }
-
-  .meta-value {
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 8px;
-    letter-spacing: -0.11px;
-    color: #000;
-    margin-top: 7px;
-  }
-
-  .meta-author {
-    margin-top: 30px;
-  }
-
-  .meta-categories {
-    margin-top: 6px;
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 8px;
-    letter-spacing: -0.11px;
-    text-transform: uppercase;
-  }
-
-  .meta-categories a {
-    color: #0018a8;
-    text-decoration: none;
-  }
-
-  .meta-categories .comma {
-    color: #000;
-  }
-
-  .social-icons {
-    display: flex;
-    gap: 4px;
-    margin-top: 38px;
-  }
-
-  .social-icon {
-    width: 14px;
-    height: 14px;
-    object-fit: cover;
-  }
-
-  /* Word roulette interactive module */
-  .word-roulette-wrapper {
-    width: 100%;
-    max-width: 820px;
-    margin: 0 auto;
-    padding: 20px 40px;
-  }
+  body { background: #fff; font-family: Arial, Helvetica, sans-serif; }
 
   @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
   }
-  @keyframes gifFadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
   @keyframes goldShine {
     0% { background-position: -200% center; }
     100% { background-position: 200% center; }
+  }
+  @keyframes gifFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 
   .main-btn {
@@ -206,10 +26,19 @@
     background: #000;
     color: #fff;
     cursor: pointer;
-    -webkit-user-select: none;
     user-select: none;
     transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
     box-shadow: 2px 3px 8px rgba(0,0,0,0.25);
+    width: 100%;
+    padding: 20px;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.15;
+    white-space: nowrap;
   }
   .main-btn:hover { background: #111; }
   .main-btn:active {
@@ -224,638 +53,148 @@
     color: rgba(0,0,0,0.7);
     border-color: #c9953a;
   }
+
   .slot-card-inset {
     border: 2px inset #e6e6e6;
     background: #fff;
+    flex: 1 1 0;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    overflow: hidden;
+    position: relative;
   }
+
+  .slot-word {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(20px, 2.5vw, 36px);
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    line-height: 1.05;
+    user-select: none;
+    letter-spacing: -0.01em;
+    transition: font-weight 0.3s, opacity 0.3s;
+    position: relative;
+    z-index: 5;
+  }
+
+  .slot-word.faded {
+    font-weight: 200;
+    opacity: 0.12;
+  }
+
   .fact-panel {
     background: #fff;
     border: 2px inset #e6e6e6;
+    padding: 10px 18px;
+    min-height: 0;
+    flex: 0 0 auto;
+    overflow: hidden;
   }
+
+  .fact-panel p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #000;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .fact-panel p strong { font-weight: 700; }
+
+  .cursor {
+    display: inline-block;
+    width: 6px;
+    height: 14px;
+    background: #000;
+    animation: blink 1s step-end infinite;
+    vertical-align: text-bottom;
+  }
+
   .ww-container {
     width: 100%;
+    max-width: 820px;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
+
+  .ww-slot {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
   .ww-sidebar {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    order: 1;
-  }
-  .ww-slot {
-    display: flex;
-    flex-direction: row;
-    order: 0;
-    gap: 10px;
-  }
-  .ww-slot .slot-card-inset {
-    flex: 1 1 0;
-    aspect-ratio: 1 / 1;
-    min-height: 0;
   }
 
-  /* Article content flow container */
-  .article-content {
+  .ww-outer {
+    background: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
   }
 
-  /* Article body text blocks */
-  .article-text {
-    width: 480px;
-    font-family: 'TimesEighteen', 'Times New Roman', Georgia, serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 23px;
-    color: #000;
-  }
-
-  .article-text p {
-    margin-bottom: 0;
-  }
-
-  .article-text p + p {
-    margin-top: 0;
-  }
-
-  .article-text .spacer {
-    height: 20px;
-  }
-
-  /* Images in flow */
-  .washer-gold {
-    width: 412px;
-    height: 404px;
-    overflow: hidden;
-    position: relative;
-    margin: 20px 0 20px;
-  }
-
-  .washer-gold img {
+  .gif-overlay {
     position: absolute;
-    left: -82.29%;
-    top: -37.8%;
-    width: 264.59%;
-    height: 151.83%;
+    pointer-events: none;
+    z-index: 3;
+    animation: gifFadeIn 0.3s ease forwards;
   }
 
-  /* Image captions */
-  .image-caption {
-    width: 664px;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: -0.12px;
-    text-align: center;
-    color: #000;
-    margin-bottom: 40px;
-  }
-
-  .image-caption .bold {
-    font-weight: 700;
-  }
-
-  .image-caption .regular {
-    font-weight: 400;
-  }
-
-  /* Pull quote */
-  .pull-quote-block {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 0;
-  }
-
-  .pull-quote {
-    width: 979px;
-    font-family: Arial, sans-serif;
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 80px;
-    text-align: center;
-    color: #000;
-  }
-
-  .pull-quote-attribution {
-    width: 664px;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000;
-    margin-top: 40px;
-  }
-
-  /* Gold envelope image */
-  .gold-envelope {
-    width: 900px;
-    max-width: 100%;
-    overflow: visible;
-    position: relative;
-    margin: 20px auto 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .gold-envelope img {
-    width: 100%;
-    height: auto;
-    position: relative;
-    margin: -10% 0;
-  }
-
-  /* Vaccine gold image */
-  .vaccin-gold {
-    width: 500px;
-    max-width: 100%;
-    overflow: visible;
-    position: relative;
-    margin: 80px auto 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .vaccin-gold img {
-    width: 440%;
-    max-width: none;
-    height: auto;
-    position: relative;
-    margin: -42% 0;
-  }
-
-  /* Newsletter signup */
-  .newsletter {
-    width: 480px;
-    margin-top: 60px;
-    padding-bottom: 80px;
-  }
-
-  .newsletter-title {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 1.1;
-    text-transform: uppercase;
-    color: #000;
-  }
-
-  .newsletter-subtitle {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.1;
-    letter-spacing: 0.24px;
-    color: #000;
-    margin-top: 21px;
-    width: 284px;
-  }
-
-  .newsletter-form {
-    display: flex;
-    margin-top: 19px;
-  }
-
-  .newsletter-input {
-    width: 384px;
-    height: 34px;
-    background: #f1f1f1;
-    border: none;
-    padding: 0 17px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 10px;
-    color: rgba(0,0,0,0.4);
-    text-transform: uppercase;
-    outline: none;
-  }
-
-  .newsletter-submit {
-    width: 91px;
-    height: 34px;
-    background: #000;
-    border: none;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 10px;
-    font-weight: 400;
-    color: #fff;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: opacity 0.2s;
-  }
-
-  .newsletter-submit:hover {
-    opacity: 0.8;
-  }
-
-  /* ======================== MOBILE STYLES ======================== */
-  @media (max-width: 768px) {
-    body {
-      width: 100%;
-    }
-
-    /* --- Hero --- */
-    .hero {
-      width: 100%;
-      height: 100vh;
-      padding: 130px 20px 40px;
-      align-items: center;
-      justify-content: flex-start;
-    }
-
-    .hero-headline {
-      width: 100%;
-      font-size: 52px;
-      line-height: 52px;
-      text-align: center;
-    }
-
-    .hero-subtitle {
-      width: 100%;
-      font-size: 25px;
-      line-height: 28px;
-      text-align: center;
-      margin-top: 140px;
-    }
-
-    .hero-byline {
-      width: 100%;
-      font-size: 10.5px;
-      line-height: 16px;
-      text-align: center;
-      margin-top: auto;
-      padding-bottom: 30px;
-    }
-
-    .byline-desktop { display: none; }
-    .byline-mobile { display: inline; }
-
-    /* --- Article --- */
-    .article {
-      width: 100%;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* Meta sidebar on mobile — reorder before roulette */
-    .meta-sidebar {
-      position: relative;
-      left: auto;
-      top: auto;
-      order: -2;
-      padding: 24px 20px;
-      border-top: none;
-    }
-
-    .meta-row-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-
-    .meta-author {
-      margin-top: 24px;
-    }
-
-    .meta-categories {
-      margin-top: 4px;
-      font-size: 13px;
-      line-height: 16px;
-    }
-
-    .social-icons {
-      margin-top: 0;
-      gap: 6px;
-    }
-
-    .social-icon {
-      width: 18px;
-      height: 18px;
-    }
-
-    /* Word roulette on mobile */
-    .word-roulette-wrapper {
-      padding: 10px;
-      order: -1;
-    }
-
-    .ww-slot {
-      flex-direction: column;
-      gap: 8px;
-    }
-    .ww-slot .slot-card-inset {
-      aspect-ratio: auto !important;
-      min-height: 82vw !important;
-    }
-
-    /* Article content */
-    .article-content {
-      padding: 0 20px;
-    }
-
-    .article-text {
-      width: 100%;
-      font-size: 17px;
-      line-height: 25px;
-      letter-spacing: 0.17px;
-    }
-
-    .article-text .spacer {
-      height: 16px;
-    }
-
-    /* Images */
-    .washer-gold {
-      width: 80%;
-      height: 300px;
-      margin: 30px 0 8px;
-    }
-
-    .gold-envelope {
-      width: 100%;
-      height: auto;
-      margin: 80px 0 8px;
-      padding-bottom: 50px;
-      overflow: visible;
-    }
-
-    .gold-envelope img {
-      position: relative;
-      left: auto;
-      top: auto;
-      width: 100%;
-      height: auto;
-      transform: scale(2.2);
-    }
-
-    .vaccin-gold {
-      width: 100%;
-      height: auto;
-      margin: 10px 0 8px;
-      overflow: visible;
-    }
-
-    .vaccin-gold img {
-      position: relative;
-      left: auto;
-      top: auto;
-      width: 100%;
-      height: auto;
-      transform: scale(2);
-    }
-
-    /* Captions */
-    .image-caption {
-      width: 100%;
-      font-size: 11px;
-      margin-bottom: 30px;
-    }
-
-    /* Pull quote */
-    .pull-quote-block {
-      padding: 35px 0;
-    }
-
-    .pull-quote {
-      width: 100%;
-      font-size: 43px;
-      line-height: 47px;
-    }
-
-    .pull-quote-attribution {
-      width: 100%;
-      font-size: 10px;
-      line-height: 30px;
-      margin-top: 20px;
-    }
-
-    /* Newsletter */
-    .newsletter {
-      width: 100%;
-      margin-top: 40px;
-      padding-bottom: 60px;
-    }
-
-    .newsletter-form {
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .newsletter-input {
-      width: 100%;
-    }
-
-    .newsletter-submit {
-      width: 100%;
-    }
+  @media (max-width: 600px) {
+    .ww-outer { padding: 12px; }
+    .ww-container { gap: 8px; }
+    .ww-sidebar { gap: 8px; }
+    .ww-slot { gap: 8px; }
+    .slot-card-inset { padding: 12px; }
+    .main-btn { font-size: 13px; white-space: normal; padding: 12px 14px; }
+    .slot-word { font-size: clamp(13px, 4.5vw, 22px) !important; }
   }
 </style>
 </head>
 <body>
-
-<!-- ===================== HERO SECTION ===================== -->
-<section class="hero">
-  <img class="hero-bg-image" src="https://www.figma.com/api/mcp/asset/8aa9021c-850b-4542-bddf-296209ac3974" alt="">
-  <div class="hero-headline">Winning isn't always shiny and loud</div>
-  <div class="hero-subtitle">The vocabulary of winning: Why we're talking differently about climate.</div>
-  <div class="hero-byline">
-    <span class="byline-desktop"><span style="color: #999; letter-spacing: 4px;">THOUGHTS</span>&nbsp;&nbsp;3 Feb, 2026 /&nbsp;&nbsp;Per Frykenbrandt</span>
-    <span class="byline-mobile">Thoughts 3 Feb, 2026 / Per Frykenbrandt</span>
-  </div>
-</section>
-
-<!-- ===================== ARTICLE SECTION ===================== -->
-<section class="article">
-
-  <!-- Word roulette interactive module -->
-  <div class="word-roulette-wrapper">
-    <div id="word-roulette"></div>
-  </div>
-
-  <!-- Meta sidebar -->
-  <div class="meta-sidebar">
-    <div class="meta-row-top">
-      <div class="meta-published">
-        <div class="meta-label">Published</div>
-        <div class="meta-value">11TH JANUARY</div>
+<div class="ww-outer">
+  <div class="ww-container">
+    <div class="ww-slot">
+      <div class="slot-card-inset" id="fight-card">
+        <span class="slot-word" id="fight-word">CHOLERA-FREE WATER</span>
       </div>
-      <div class="social-icons">
-        <img class="social-icon" src="https://www.figma.com/api/mcp/asset/bce0ff55-c03c-45da-ba58-b6b0ad158768" alt="LinkedIn">
-        <img class="social-icon" src="https://www.figma.com/api/mcp/asset/43137ad1-c9b3-4d00-88c9-1a8da0363812" alt="X">
-        <img class="social-icon" src="https://www.figma.com/api/mcp/asset/cedfd425-a705-4b20-b6ab-09ab1f3997ea" alt="Substack">
+      <div class="slot-card-inset" id="win-card">
+        <span class="slot-word" id="win-word">WATER</span>
       </div>
     </div>
-    <div class="meta-author">
-      <div class="meta-label">Words by</div>
-      <div class="meta-value">Per Fyrkant</div>
-      <div class="meta-categories">
-        <a href="#">IDEAS</a><span class="comma">,</span> <a href="#">POLICY</a>
+    <div class="ww-sidebar">
+      <button class="main-btn" id="spin-btn">PRESS TO GENERATE A WINNING WORD</button>
+      <div class="fact-panel" id="fact-panel">
+        <span class="cursor"></span>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Article content in normal flow -->
-  <div class="article-content">
-
-    <!-- Text Block 1 -->
-    <div class="article-text" style="margin-top: 40px;">
-      <p>You've probably noticed it. In the pitch decks, in the meeting rooms, in the way people talk when the microphones are on. The language around climate has changed. The sharp edges are being sanded down. The urgency is giving way to something quieter. The language that used to signal seriousness now signals something closer to pragmatism.</p>
-      <div class="spacer"></div>
-      <p>If you've spent years building the case for why this matters, the shift can feel like watching your movement get mugged in broad daylight. The headlines make it easy to believe that the whole project is losing its nerve, retreating into euphemism at precisely the moment it should be pressing its advantage.</p>
-      <div class="spacer"></div>
-      <p>But what is happening to climate language has happened before. The pattern is older than any of us, and one that has played out every time an idea successfully moved from the margins to the mainstream.</p>
-      <div class="spacer"></div>
-      <p>The vocabulary of protest gives way to the vocabulary of practice. The moral language that built the early coalition gets absorbed into the operational language of the systems powerful enough to implement it at scale.</p>
-      <div class="spacer"></div>
-      <p>The language of climate is changing because the technology is winning.</p>
-      <div class="spacer"></div>
-      <p>But this pattern is almost always misread in real time.</p>
-      <div class="spacer"></div>
-      <p>In the mid-nineteenth century, the case for sanitation was made in the language of moral emergency. Cholera was killing thousands in the industrial cities of Europe. Reformers argued – with data, outrage, and desperation – that governments had a duty to provide clean water and remove human waste. The principle that a city should not poison its own residents seemed self-evident to the people making the case.</p>
-      <div class="spacer"></div>
-      <p>It was not self-evident to the people paying the bills. Taxpayers resisted higher taxes. Local authorities resisted centralised control. Private water companies – whose shareholders, in London's case, sat in Parliament – lobbied against reforms that would dismantle their business model. For decades, the moral argument was met with structural resistance. Not because anyone was formally pro-cholera, but because the costs were immediate and the returns were invisible.</p>
-    </div>
-
-    <!-- Washer Gold Image -->
-    <div class="washer-gold">
-      <img src="https://www.figma.com/api/mcp/asset/fed7f50e-bba1-4f11-9beb-a885bdd0fb6a" alt="Gold washer">
-    </div>
-
-    <!-- Caption 1 -->
-    <div class="image-caption">
-      <span class="bold">Pret-a-porter tap water.</span><br>
-      <span class="regular">A win that never received a golden medal.</span>
-    </div>
-
-    <!-- Text Block 2 -->
-    <div class="article-text">
-      <p>The same arc played out in workplace safety.</p>
-      <div class="spacer"></div>
-      <p>The early twentieth-century safety movement spoke the language of moral outrage, and rightly so. From child labour to coal mines. Factory floors where injury was treated as a cost of production. Workers demanded a right to return home alive. But many employers resisted action on explicitly economic grounds: compliance would be ruinous, and regulation would kill competitiveness.</p>
-      <div class="spacer"></div>
-      <p>You could set a clock by this argument. It shows up every time.</p>
-      <div class="spacer"></div>
-      <p>Then, through the mid-to-late twentieth century, something happened in the data. Firms that invested in safer working conditions began showing measurable productivity gains. The disciplines required to eliminate accidents (process standardisation, equipment maintenance, workforce training) turned out to be the same disciplines that improved output quality and reduced downtime. Safety and efficiency were, it turned out, the same investment seen from two different angles. Studies consistently showed returns of four to six dollars for every dollar spent on workplace safety.</p>
-      <div class="spacer"></div>
-      <p>The language changed accordingly. "Worker protection" became "operational excellence." "Risk to human life" became "risk management." The moral foundation held, nobody stopped caring about the workers. But the argument graduated. And in graduating, it reached boardrooms and balance sheets the original moral case never could.</p>
-      <div class="spacer"></div>
-      <p>The same pattern, and the same arc. A moral case builds political will. Political will creates regulation. Regulation drives adoption. Adoption generates data. Data reveals a business case so strong that it eventually renders the original moral argument unnecessary. Not because it was wrong, but because it was successful.</p>
-    </div>
-
-    <!-- Text Block 3 -->
-    <div class="article-text" style="margin-top: 40px;">
-      <p>The same pattern is now playing out in climate technologies. And because we are living inside it, it is harder to see.</p>
-      <div class="spacer"></div>
-      <p>For decades, the case for moving beyond fossil fuels was made in the language of survival. Rising seas. Collapsing ecosystems. A moral obligation to future generations. The early climate movement spoke with urgency because urgency was warranted. And at the time, it was the only argument available. Solar was expensive. Wind was unreliable. The economics didn't yet support the cause, so the cause had to be carried by conviction alone.</p>
-      <div class="spacer"></div>
-      <p>And just like sanitation, just like worker safety, the moral case was met with structural resistance. Fossil fuel incumbents funded doubt. Governments subsidised the status quo. Industry groups argued that transition would be ruinous. That regulation would kill competitiveness. That the costs were too high. That the market should sort it out. The language was almost identical to what sceptics said about sewers in the 1850s and what factory owners said about safety in the 1970s. Different century, same sentence.</p>
-      <div class="spacer"></div>
-      <p>But while the political debate recycled familiar arguments, something was happening in the cost curves that would change everything.</p>
-    </div>
-
-    <!-- Pull Quote -->
-    <div class="pull-quote-block">
-      <div class="pull-quote">"This is what happens when an idea stops belonging to a movement and starts belonging to an economy."</div>
-    </div>
-
-    <!-- Text Block 4 -->
-    <div class="article-text">
-      <p>Solar costs fell more than 90 per cent in a decade. Battery storage costs dropped by a similar margin. In 2025, over 90 per cent of newly installed renewable capacity was cheaper than the cheapest fossil fuel alternative. More than 90 per cent of new power capacity added in the United States was renewable. In China, the figure exceeded 85 per cent. The IEA expects renewables to overtake coal as the world's largest source of electricity this year.</p>
-      <div class="spacer"></div>
-      <p>The first generation of climate technologies has not just caught up with fossil fuels. It has fundamentally beaten them. On cost, on speed of deployment, on capital attraction, and increasingly on reliability. The argument is over.</p>
-      <div class="spacer"></div>
-      <p>And the language – predictably – has followed.</p>
-      <div class="spacer"></div>
-      <p>"Climate action" is becoming "energy competitiveness." "Decarbonisation" is becoming "energy security."</p>
-      <div class="spacer"></div>
-      <p>The easy explanation for this shift has been that it is political. A new administration in Washington. An anti-ESG backlash rolling through regulators and asset managers. A culture war that has made "climate" a word some people now avoid in polite company. But the timeline doesn't support that story. The largest climate investment in American history was passed in August 2022.</p>
-      <div class="spacer"></div>
-      <p>Before the backlash peaked, before fossil fuels were recast as a political identity. And it wasn't passed as a climate bill. It was called the Inflation Reduction Act, sold to Congress on the promise of cheaper energy, domestic manufacturing, and jobs.</p>
-      <div class="spacer"></div>
-      <p>The economic argument had already become superior to the moral one.</p>
-    </div>
-
-    <!-- Gold Envelope Image -->
-    <div class="gold-envelope">
-      <img src="https://www.figma.com/api/mcp/asset/a10f11f0-ed2c-4a4e-8746-56e756e27bf0" alt="Gold envelope">
-    </div>
-
-    <!-- Caption 2 -->
-    <div class="image-caption">
-      <span style="font-weight:700;">Getting a cheap energy bill.</span><br>
-      <span style="font-weight:400;">What happens when "Climate action" is becoming "energy competitiveness."</span>
-    </div>
-
-    <!-- Text Block 5 -->
-    <div class="article-text">
-      <p>The language shift marks the moment a transition stops needing to persuade and starts being able to simply offer a better deal. Cities speak in infrastructure. Firms speak in management. Markets speak in returns. Not because they have forgotten the moral argument, but because they were never the audience for it. They were the audience for the deal. And when the deal is good enough, they move – bringing with them the capital and implementation capacity that moral movements alone cannot command.</p>
-      <div class="spacer"></div>
-      <p>If you are inside the movement that built the moral case, this can feel like erasure. If you step back, it looks like success. This is what happens when an idea stops belonging to a movement and starts belonging to an economy.</p>
-      <div class="spacer"></div>
-      <p>In 2025, global investment in clean energy reached $2.2 trillion – double the amount flowing to fossil fuels. The infrastructure is scaling. The cost curves continue to fall. Renewables are structurally embedded in the industrial strategies of the world's largest economies.</p>
-      <div class="spacer"></div>
-      <p>The moral case did its job. It built the coalition that created the political conditions that drove the deployment that made the economics undeniable. That sequence is now self-reinforcing. Cost curves do not reverse because administrations change. Infrastructure, once built, does not unbuild. Capital, once it finds a return, does not forget the address.</p>
-    </div>
-
-    <!-- Vaccine Gold Image -->
-    <div class="vaccin-gold">
-      <img src="https://www.figma.com/api/mcp/asset/edd89dd3-8578-48ac-afb1-5543d7353b99" alt="Gold vaccine">
-    </div>
-
-    <!-- Caption 3 -->
-    <div class="image-caption">
-      <span style="font-weight:700;">Pandemic prevention? Golden. </span><br>
-      <span style="font-weight:400;">Taking the yearly flu shot? Diskbänksrealism.</span>
-    </div>
-
-    <!-- Text Block 6 -->
-    <div class="article-text">
-      <p>But the biggest risk in a winning transition is that the people who should be accelerating it misread the moment and pull back, just as the deal becomes impossible to refuse.</p>
-      <div class="spacer"></div>
-      <p>The question for anyone working in this space – as a founder, a funder, or an enabler – is not whether the transition is happening. It is whether they see it clearly enough to build on it while others are still debating whether it's real.</p>
-      <div class="spacer"></div>
-      <p>That is what it looks like when an idea wins. Not everyone chanting the same words. But everyone building the same thing, for different reasons, in different languages, at the same time.</p>
-    </div>
-
-    <!-- Newsletter Signup -->
-    <div class="newsletter">
-      <div class="newsletter-title">Like what you're reading?</div>
-      <div class="newsletter-subtitle">Sign up to get more updates like these.</div>
-      <div class="newsletter-form">
-        <input type="email" class="newsletter-input" placeholder="EMAIL">
-        <button class="newsletter-submit">SIGN UP</button>
-      </div>
-    </div>
-
-  </div><!-- end article-content -->
-
-</section>
-
-<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-<script type="text/babel">
-const { useState, useEffect, useRef, useCallback } = React;
-
+<script>
 const PAIRS = [
   { fight: "Cholera-free water", win: "Water", fact: "In 1854, John Snow traced a cholera outbreak to a single water pump on Broad Street, London. He removed the handle. The epidemic stopped. Today we just turn on the tap." },
   { fight: "Climate action", win: "Cheap energy", fact: "Solar energy costs dropped 90% in a decade. In 2025, renewables were cheaper than fossil fuels in over 90% of new installations worldwide." },
-  { fight: "Labor rights", win: "Saturday", fact: "The five-day work week was won through decades of strikes, protests, and deaths. Henry Ford adopted it in 1926\u2014not out of kindness, but because rested workers made more cars." },
+  { fight: "Labor rights", win: "Saturday", fact: "The five-day work week was won through decades of strikes, protests, and deaths. Henry Ford adopted it in 1926, not out of kindness, but because rested workers made more cars." },
   { fight: "Child liberation", win: "School", fact: "In 1900, 18% of American workers were under 16. It took until 1938 for federal law to meaningfully restrict child labor. Now we call it fourth grade." },
   { fight: "Pandemic prevention", win: "Vaccine", fact: "Smallpox killed 300 million people in the 20th century alone. A global vaccination campaign eradicated it by 1980. The last natural case was a hospital cook in Somalia." },
   { fight: "Food safety regulation", win: "Expiry date", fact: "Upton Sinclair wrote The Jungle in 1906 to expose worker exploitation. Instead, readers were horrified by the meatpacking. The Pure Food and Drug Act passed that same year." },
 ];
 
 const GIF_TYPES = ["confetti", "clapping", "shooting_star"];
-const GIF_PATH = "gifsforyou/";
+const GIF_MAP = { confetti: "confetti.gif", clapping: "clapping.gif", shooting_star: "shooting.gif" };
 
 function shuffle(arr) {
   const a = [...arr];
@@ -866,154 +205,141 @@ function shuffle(arr) {
   return a;
 }
 
-function useWordScramble(targetText, allWords, isScrambling, duration = 1600) {
-  const [display, setDisplay] = useState(targetText);
-  const frameRef = useRef(null);
-  const startRef = useRef(null);
-  useEffect(() => {
-    if (!isScrambling) { setDisplay(targetText); return; }
-    startRef.current = Date.now();
-    const otherWords = allWords.filter(w => w !== targetText);
-    let lastSwap = 0;
-    const animate = () => {
-      const elapsed = Date.now() - startRef.current;
-      if (Math.min(elapsed / duration, 1) >= 1) { setDisplay(targetText); return; }
-      if (elapsed - lastSwap > 120) {
-        lastSwap = elapsed;
-        setDisplay(otherWords[Math.floor(Math.random() * otherWords.length)]);
-      }
-      frameRef.current = requestAnimationFrame(animate);
-    };
-    frameRef.current = requestAnimationFrame(animate);
-    return () => { if (frameRef.current) cancelAnimationFrame(frameRef.current); };
-  }, [targetText, isScrambling, duration, allWords]);
-  return display;
+const allFightWords = PAIRS.map(p => p.fight.toUpperCase());
+const allWinWords = PAIRS.map(p => p.win.toUpperCase());
+
+let order = shuffle(PAIRS);
+let currentIndex = 0;
+let isSpinning = false;
+let typewriterInterval = null;
+let gifTypeIndex = 0;
+
+const fightWordEl = document.getElementById('fight-word');
+const winWordEl = document.getElementById('win-word');
+const winCard = document.getElementById('win-card');
+const spinBtn = document.getElementById('spin-btn');
+const factPanel = document.getElementById('fact-panel');
+
+function clearGifs() {
+  winCard.querySelectorAll('.gif-overlay').forEach(el => el.remove());
 }
 
-function useTypewriter(text, active, speed = 30) {
-  const [displayed, setDisplayed] = useState("");
-  const [isTyping, setIsTyping] = useState(false);
-  const indexRef = useRef(0);
-  useEffect(() => {
-    if (!active) { setDisplayed(""); indexRef.current = 0; setIsTyping(false); return; }
-    indexRef.current = 0; setDisplayed(""); setIsTyping(true);
-    const interval = setInterval(() => {
-      indexRef.current++;
-      if (indexRef.current <= text.length) setDisplayed(text.slice(0, indexRef.current));
-      else { clearInterval(interval); setIsTyping(false); }
-    }, speed);
-    return () => clearInterval(interval);
-  }, [text, active, speed]);
-  return { displayed, isTyping };
-}
+function showGif(type) {
+  clearGifs();
+  const src = 'gifsforyou/' + GIF_MAP[type];
 
-function useIsMobile(breakpoint = 600) {
-  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= breakpoint);
-  useEffect(() => {
-    const mq = window.matchMedia(`(max-width: ${breakpoint}px)`);
-    const handler = (e) => setIsMobile(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, [breakpoint]);
-  return isMobile;
-}
-
-function CelebrationGif({ type, show }) {
-  if (!show) return null;
-  const gifMap = { confetti: "confetti.gif", clapping: "clapping.gif", shooting_star: "shooting.gif" };
-  if (type === "clapping") {
-    return (<>
-      <img src={`${GIF_PATH}${gifMap[type]}`} alt="" style={{position:"absolute",bottom:0,left:0,width:"100%",height:"50%",objectFit:"cover",objectPosition:"center bottom",zIndex:3,pointerEvents:"none",animation:"gifFadeIn 0.3s ease forwards"}}/>
-      <img src={`${GIF_PATH}${gifMap[type]}`} alt="" style={{position:"absolute",top:0,left:0,width:"100%",height:"50%",objectFit:"cover",objectPosition:"center top",transform:"scaleY(-1)",zIndex:3,pointerEvents:"none",animation:"gifFadeIn 0.3s ease 0.1s both"}}/>
-    </>);
+  if (type === 'confetti') {
+    const top = document.createElement('img');
+    top.src = src; top.className = 'gif-overlay';
+    Object.assign(top.style, { top: 0, left: 0, width: '100%', height: '50%', objectFit: 'cover', objectPosition: 'center top' });
+    const bot = document.createElement('img');
+    bot.src = src; bot.className = 'gif-overlay';
+    Object.assign(bot.style, { bottom: 0, left: 0, width: '100%', height: '50%', objectFit: 'cover', objectPosition: 'center top', transform: 'scaleY(-1)', animationDelay: '0.1s' });
+    winCard.append(top, bot);
+  } else if (type === 'clapping') {
+    const bot = document.createElement('img');
+    bot.src = src; bot.className = 'gif-overlay';
+    Object.assign(bot.style, { bottom: 0, left: 0, width: '100%', height: '50%', objectFit: 'cover', objectPosition: 'center bottom' });
+    const top = document.createElement('img');
+    top.src = src; top.className = 'gif-overlay';
+    Object.assign(top.style, { top: 0, left: 0, width: '100%', height: '50%', objectFit: 'cover', objectPosition: 'center top', transform: 'scaleY(-1)', animationDelay: '0.1s' });
+    winCard.append(bot, top);
+  } else if (type === 'shooting_star') {
+    const img = document.createElement('img');
+    img.src = src; img.className = 'gif-overlay';
+    Object.assign(img.style, { top: '50%', left: '50%', width: '120%', height: '120%', transform: 'translate(-50%, -50%)', objectFit: 'contain' });
+    winCard.append(img);
   }
-  if (type === "confetti") {
-    return (<>
-      <img src={`${GIF_PATH}${gifMap[type]}`} alt="" style={{position:"absolute",top:0,left:0,width:"100%",height:"50%",objectFit:"cover",objectPosition:"center top",zIndex:3,pointerEvents:"none",animation:"gifFadeIn 0.3s ease forwards"}}/>
-      <img src={`${GIF_PATH}${gifMap[type]}`} alt="" style={{position:"absolute",bottom:0,left:0,width:"100%",height:"50%",objectFit:"cover",objectPosition:"center top",transform:"scaleY(-1)",zIndex:3,pointerEvents:"none",animation:"gifFadeIn 0.3s ease 0.1s both"}}/>
-    </>);
-  }
-  if (type === "shooting_star") {
-    return (<img src={`${GIF_PATH}${gifMap[type]}`} alt="" style={{position:"absolute",top:"50%",left:"50%",width:"120%",height:"120%",transform:"translate(-50%,-50%)",objectFit:"contain",zIndex:3,pointerEvents:"none",animation:"gifFadeIn 0.3s ease forwards"}}/>);
-  }
-  return null;
 }
 
-function VocabularyOfWinning() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isSpinning, setIsSpinning] = useState(false);
-  const [isWinner, setIsWinner] = useState(false);
-  const [order, setOrder] = useState(() => shuffle(PAIRS));
-  const [loserFade, setLoserFade] = useState(false);
-  const [showCelebration, setShowCelebration] = useState(false);
-  const [showFact, setShowFact] = useState(false);
-  const [gifIndex, setGifIndex] = useState(0);
-  const [btnGoldFlash, setBtnGoldFlash] = useState(false);
-  const [goldFading, setGoldFading] = useState(false);
-  const isMobile = useIsMobile(600);
-  const allFightWords = PAIRS.map(p => p.fight);
-  const allWinWords = PAIRS.map(p => p.win);
+function scramble(el, targetText, allWords, duration, onDone) {
+  const others = allWords.filter(w => w.toUpperCase() !== targetText.toUpperCase());
+  const start = Date.now();
+  let lastSwap = 0;
+  let raf;
 
-  const spin = useCallback(() => {
-    if (isSpinning) return;
-    setIsWinner(false); setLoserFade(false); setShowCelebration(false);
-    setShowFact(false); setIsSpinning(true);
-    setBtnGoldFlash(false); setGoldFading(false);
-    const nextIndex = (currentIndex + 1) % order.length;
-    if (nextIndex === 0) setOrder(shuffle(PAIRS));
-    setCurrentIndex(nextIndex);
-    setGifIndex(prev => (prev + 1) % GIF_TYPES.length);
-    setTimeout(() => {
-      setIsSpinning(false);
-      setTimeout(() => {
-        setIsWinner(true); setShowCelebration(true);
-        setBtnGoldFlash(true);
-        setTimeout(() => { setLoserFade(true); setShowFact(true); }, 500);
-        setTimeout(() => { setBtnGoldFlash(false); setGoldFading(false); }, 1100);
-      }, 250);
-    }, 1600);
-  }, [isSpinning, currentIndex, order]);
+  function animate() {
+    const elapsed = Date.now() - start;
+    if (elapsed >= duration) {
+      el.textContent = targetText.toUpperCase();
+      if (onDone) onDone();
+      return;
+    }
+    if (elapsed - lastSwap > 120) {
+      lastSwap = elapsed;
+      el.textContent = others[Math.floor(Math.random() * others.length)].toUpperCase();
+    }
+    raf = requestAnimationFrame(animate);
+  }
+  raf = requestAnimationFrame(animate);
+  return () => cancelAnimationFrame(raf);
+}
+
+function typewrite(text, speed = 8) {
+  clearInterval(typewriterInterval);
+  const firstDot = text.indexOf('. ');
+  const leadEnd = firstDot > 0 ? firstDot + 1 : text.length;
+  let i = 0;
+  factPanel.innerHTML = '';
+
+  typewriterInterval = setInterval(() => {
+    i++;
+    const typed = text.slice(0, i);
+    const lead = typed.slice(0, Math.min(typed.length, leadEnd));
+    const rest = typed.length > leadEnd + 1 ? ' ' + typed.slice(leadEnd + 1) : '';
+    factPanel.innerHTML = '<p><strong>' + lead + '</strong>' + (rest ? '<span>' + rest + '</span>' : '') + '</p>';
+    if (i >= text.length) clearInterval(typewriterInterval);
+  }, speed);
+}
+
+function spin() {
+  if (isSpinning) return;
+  isSpinning = true;
+  clearInterval(typewriterInterval);
+  clearGifs();
+
+  fightWordEl.classList.remove('faded');
+  factPanel.innerHTML = '<span>⏳</span>';
+  spinBtn.classList.remove('gold-state');
+  spinBtn.textContent = 'PRESS TO GENERATE A WINNING WORD';
+  spinBtn.style.fontFamily = "'Times New Roman', Times, Georgia, serif";
+
+  currentIndex = (currentIndex + 1) % order.length;
+  if (currentIndex === 0) order = shuffle(PAIRS);
 
   const current = order[currentIndex];
-  const fightText = useWordScramble(current.fight, allFightWords, isSpinning, 1400);
-  const winText = useWordScramble(current.win, allWinWords, isSpinning, 1600);
-  const factText = current.fact;
-  const { displayed: typedFact } = useTypewriter(factText, showFact, 8);
-  const winFontSize = isMobile ? "clamp(16px, 5vw, 26px)" : "clamp(20px, 2.5vw, 36px)";
-  const firstDot = factText.indexOf('. ');
-  const factLead = firstDot > 0 ? factText.slice(0, firstDot + 1) : factText;
-  const isGold = btnGoldFlash || goldFading;
-  const btnText = btnGoldFlash ? "WINNER!" : "PRESS TO GENERATE A WINNING WORD";
+  gifTypeIndex = (gifTypeIndex + 1) % GIF_TYPES.length;
 
-  return (
-    <div className="ww-container">
-      <div className="ww-slot">
-        <div className="slot-card-inset" style={{display:"flex",alignItems:"center",justifyContent:"center",padding:isMobile?"16px 10px":"24px",overflow:"hidden"}}>
-          <span style={{fontFamily:"Arial,Helvetica,sans-serif",fontSize:winFontSize,fontWeight:loserFade?200:400,textTransform:"uppercase",color:"#000",textAlign:"center",lineHeight:1.05,userSelect:"none",letterSpacing:"-0.01em",opacity:loserFade?0.12:1,transition:"font-weight 0.3s, opacity 0.3s"}}>{fightText}</span>
-        </div>
-        <div className="slot-card-inset" style={{display:"flex",alignItems:"center",justifyContent:"center",padding:isMobile?"16px 10px":"24px",position:"relative",overflow:"hidden"}}>
-          <CelebrationGif type={GIF_TYPES[gifIndex]} show={showCelebration} />
-          <span style={{fontFamily:"Arial,Helvetica,sans-serif",fontSize:winFontSize,fontWeight:400,textTransform:"uppercase",color:"#000",textAlign:"center",lineHeight:1.05,userSelect:"none",letterSpacing:"-0.01em",position:"relative",zIndex:5,transition:"font-weight 0.3s"}}>{winText}</span>
-        </div>
-      </div>
-      <div className="ww-sidebar">
-        <button onClick={spin} className={`main-btn${isGold?" gold-state":""}`} style={{width:"100%",padding:isMobile?"14px 16px":"20px 20px",fontFamily:btnGoldFlash?"Arial,Helvetica,sans-serif":"'Times New Roman',Times,Georgia,serif",fontSize:isMobile?13:26,fontWeight:400,letterSpacing:"0.06em",textTransform:"uppercase",textAlign:"center",lineHeight:1.15,whiteSpace:isMobile?"normal":"nowrap"}}>{btnText}</button>
-        <div className="fact-panel" style={{padding:"10px 18px",minHeight:0,flex:"0 0 auto",overflow:"hidden"}}>
-          {showFact ? (
-            <p style={{fontFamily:"Arial,Helvetica,sans-serif",fontSize:13,fontWeight:400,letterSpacing:"0.01em",color:"#000",lineHeight:1.5,margin:0}}>
-              <strong style={{fontWeight:700}}>{typedFact.slice(0,Math.min(typedFact.length,factLead.length))}</strong>
-              {typedFact.length>factLead.length+1?<span style={{fontWeight:400}}>{" "}{typedFact.slice(factLead.length+1)}</span>:null}
-            </p>
-          ) : (
-            <span style={{fontFamily:"Arial,Helvetica,sans-serif",fontSize:14,color:"#000"}}>{isSpinning?"\u23F3":<span style={{display:"inline-block",width:6,height:14,background:"#000",animation:"blink 1s step-end infinite",verticalAlign:"text-bottom"}}/>}</span>
-          )}
-        </div>
-      </div>
-    </div>
-  );
+  scramble(fightWordEl, current.fight, allFightWords, 1400, null);
+  scramble(winWordEl, current.win, allWinWords, 1600, () => {
+    isSpinning = false;
+
+    setTimeout(() => {
+      fightWordEl.classList.add('faded');
+      showGif(GIF_TYPES[gifTypeIndex]);
+
+      spinBtn.classList.add('gold-state');
+      spinBtn.textContent = 'WINNER!';
+      spinBtn.style.fontFamily = 'Arial, Helvetica, sans-serif';
+
+      factPanel.innerHTML = '<span class="cursor"></span>';
+      setTimeout(() => typewrite(current.fact, 8), 500);
+
+      setTimeout(() => {
+        spinBtn.classList.remove('gold-state');
+        spinBtn.textContent = 'PRESS TO GENERATE A WINNING WORD';
+        spinBtn.style.fontFamily = "'Times New Roman', Times, Georgia, serif";
+      }, 1100);
+    }, 250);
+  });
 }
 
-ReactDOM.createRoot(document.getElementById("word-roulette")).render(<VocabularyOfWinning />);
+spinBtn.addEventListener('click', spin);
+
+const first = order[currentIndex];
+fightWordEl.textContent = first.fight.toUpperCase();
+winWordEl.textContent = first.win.toUpperCase();
+factPanel.innerHTML = '<span class="cursor"></span>';
 </script>
 </body>
 </html>
